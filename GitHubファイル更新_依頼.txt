@@ -1,0 +1,48 @@
+===================================
+依頼内容：GitHubのindex.htmlを最新版に更新
+===================================
+
+【目的】
+サイトのLINEボタンに公式LINEアカウントのURLを設定しました。
+更新したindex.htmlをGitHubにアップして、サイトに自動反映させてください。
+
+【手順】
+
+1. GitHubにログイン（credojpn-a11y アカウント）
+
+2. リポジトリを開く
+   → https://github.com/credojpn-a11y/mamarira-v6
+
+3. 「index.html」をクリックして開く
+
+4. 右上の鉛筆アイコン（Edit this file）をクリック
+
+5. エディタ内のテキストを全選択（Ctrl+A）して削除
+
+6. パソコン上の以下のファイルをメモ帳またはテキストエディタで開く
+   → デスクトップ > ｍｍ > mamarira-v6 > mamarira-v6 > index.html
+
+7. ファイルの中身を全選択（Ctrl+A）してコピー（Ctrl+C）
+
+8. GitHubのエディタに貼り付け（Ctrl+V）
+
+9. 右上の「Commit changes...」ボタンをクリック
+
+10. コミットメッセージに「LINEリンクを設定」と入力
+
+11. 「Commit changes」をクリック → 完了
+
+【確認方法】
+数分後に以下のURLを開いて、LINEボタンを押した時にLINEの画面が開くか確認
+→ https://mamarira-v6-32h.pages.dev/
+
+【変更内容（参考）】
+以下の4箇所のLINEボタンすべてに https://lin.ee/nbA69Om を設定済み：
+- ヘッダーの「LINE相談」ボタン
+- ヒーローの「LINEで無料相談する」ボタン
+- 最終CTAの「LINEで無料相談する」ボタン
+- スマホ固定フッターの「LINE相談」ボタン
+
+【注意】
+- 画像ファイル（img_v6/）は触らないでください
+- index.html以外のファイルは変更しないでください

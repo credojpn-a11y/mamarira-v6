@@ -1,0 +1,46 @@
+===================================
+依頼内容：ママりらサイトのGitHub + Cloudflare Pages 自動デプロイ設定
+===================================
+
+【目的】
+ママりらのWebサイトをGitHubで管理し、GitHubにファイルをアップするだけでCloudflare Pagesに自動デプロイされる仕組みを作りたい。
+
+【現状】
+- サイトURL: https://billowing-band-a89f.credojpn.workers.dev/
+- Cloudflareアカウント: Credojpn@gmail.com
+- サイトのソースファイル: デスクトップ > ｍｍ > mamarira-v6 > mamarira-v6 フォルダ内
+  - index.html（メインのLP）
+  - img_v6/（画像フォルダ）
+  - backup/（バックアップ）
+- GitHubアカウント: まだ持っていないので新規作成が必要
+
+【やってほしいこと（順番に）】
+
+1. GitHubアカウントを作成する
+   - メールアドレスとパスワードは自分で入力する
+
+2. GitHubに「mamarira-v6」という名前のリポジトリ（保存場所）を作成する
+   - Public（公開）でOK
+
+3. 上記のサイトファイル一式をGitHubリポジトリにアップロードする
+   - index.html
+   - img_v6/ フォルダ（画像）
+   - ※ backup/ フォルダはアップしなくてよい
+
+4. Cloudflare Pagesで新しいプロジェクトを作成し、GitHubリポジトリと連携する
+   - Cloudflareダッシュボード（Credojpn@gmail.com）にログイン
+   - Workers & Pages → Create → Pages タブ
+   - 「Connect to Git」を選択
+   - GitHubアカウントを連携
+   - リポジトリ「mamarira-v6」を選択
+   - ビルド設定: フレームワーク「None」、ビルドコマンド なし、出力ディレクトリ「/」
+   - デプロイ実行
+
+5. 完成後、以下を教えてほしい
+   - 新しいCloudflare PagesのURL（○○○.pages.dev）
+   - GitHubリポジトリのURL
+
+【注意点】
+- 画像ファイル（img_v6/フォルダ）は絶対に変更・削除しないこと
+- index.htmlの中身も変更しないこと（アップロードするだけ）
+- backupフォルダはGitHubにアップしなくてよい

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ママりら サイト更新ガイド</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans JP',sans-serif;color:#4A3728;background:#fff;line-height:1.9;font-size:15px;max-width:780px;margin:0 auto;padding:40px 30px}
+h1{font-size:1.8rem;color:#E8927C;border-bottom:3px solid #E8927C;padding-bottom:10px;margin:48px 0 24px}
+h2{font-size:1.3rem;color:#4A3728;margin:32px 0 16px;padding-left:12px;border-left:4px solid #E8927C}
+h3{font-size:1.1rem;color:#7A6355;margin:24px 0 12px}
+p{margin-bottom:14px}
+.cover{text-align:center;padding:80px 0 60px;border-bottom:3px solid #E8927C;margin-bottom:40px}
+.cover h1{border:none;font-size:2.5rem;margin:0 0 10px}
+.cover .sub{font-size:1.1rem;color:#888;margin-bottom:8px}
+.rule-box{background:#FDF2F0;border-radius:16px;padding:24px 28px;margin:20px 0}
+.rule-box table{width:100%;border-collapse:collapse}
+.rule-box td{padding:12px 16px;vertical-align:top}
+.rule-box .num{background:#E8927C;color:#fff;width:36px;height:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:1.1rem}
+.rule-box .title{font-weight:700;font-size:1.05rem;margin-bottom:4px}
+.rule-box .desc{color:#7A6355;font-size:.9rem}
+.step{display:flex;gap:20px;align-items:flex-start;margin:20px 0;padding:20px;background:#FFFBF7;border-radius:12px;border:1px solid #f0e6de}
+.step-num{background:linear-gradient(135deg,#E8927C,#F5A088);color:#fff;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.2rem;flex-shrink:0}
+.step-content{flex:1}
+.step-content strong{color:#4A3728}
+.phrase-box{background:#F5F5F5;border-radius:10px;padding:14px 20px;margin:8px 0;font-size:.95rem;border-left:4px solid #E8927C}
+.section-table{width:100%;border-collapse:collapse;margin:16px 0}
+.section-table th{background:#E8927C;color:#fff;padding:10px 14px;text-align:left;font-size:.9rem}
+.section-table td{padding:10px 14px;border-bottom:1px solid #eee;font-size:.9rem}
+.section-table tr:hover{background:#FDF2F0}
+.info-table{width:100%;border-collapse:collapse;margin:16px 0}
+.info-table td{padding:10px 14px;border-bottom:1px solid #eee}
+.info-table td:first-child{font-weight:700;background:#FDF2F0;width:200px}
+.highlight{background:linear-gradient(transparent 55%,#F8D0B0 55%);padding:0 4px}
+.tip{background:#FFF5EE;border-radius:10px;padding:16px 20px;margin:16px 0;border-left:4px solid #F5A088}
+.tip::before{content:'💡 ';font-size:1.2rem}
+@media print{body{max-width:100%;padding:20px}.cover{page-break-after:always}h1{page-break-before:always}}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1 style="font-size:2.5rem">ママりら</h1>
+  <p style="font-size:1.5rem;font-weight:700;color:#4A3728;margin-bottom:20px">サイト更新ガイド</p>
+  <p class="sub">〜 はじめてでも安心 〜</p>
+  <p class="sub">真理子さん専用マニュアル</p>
+  <p style="color:#bbb;margin-top:30px">2026年6月 作成</p>
+</div>
+
+<h1>このガイドについて</h1>
+<p>このガイドは、ママりらのWebサイトを更新するための手順書です。</p>
+<p>「<strong>クロード</strong>」というAIアシスタントを使って、サイトの文章を変更したり、記事を追加したりできます。難しい操作は一切ありません。<span class="highlight">やりたいことを日本語で伝えるだけ</span>で、クロードが代わりに作業してくれます。</p>
+
+<h1>大事なお約束</h1>
+<p>以下の3つのルールは、クロードに最初から設定してあります。<br>真理子さんが意識しなくても、<strong>自動的に守られます</strong>。</p>
+
+<div class="rule-box">
+<table>
+<tr>
+  <td style="width:50px"><span class="num">1</span></td>
+  <td>
+    <div class="title">修正前にバックアップ</div>
+    <div class="desc">変更する前に、自動的にファイルのコピーが保存されます。</div>
+  </td>
+</tr>
+<tr>
+  <td><span class="num">2</span></td>
+  <td>
+    <div class="title">画像は触らない</div>
+    <div class="desc">写真や画像ファイルは変更されません。安心してください。</div>
+  </td>
+</tr>
+<tr>
+  <td><span class="num">3</span></td>
+  <td>
+    <div class="title">いつでも元に戻せる</div>
+    <div class="desc">気に入らない場合は「元に戻して」と言うだけでOKです。</div>
+  </td>
+</tr>
+</table>
+</div>
+
+<h1>基本的な使い方</h1>
+
+<div class="step">
+  <div class="step-num">1</div>
+  <div class="step-content">
+    <strong>クロードを開く</strong><br>
+    パソコンで Claude（クロード）のデスクトップアプリを開きます。<br>
+    左メニューから「<strong>LP作成</strong>」のプロジェクトを選んでください。<br>
+    <small style="color:#999">※ プロジェクトの中にサイトの設定が保存されているので、毎回同じプロジェクトを使ってください。</small>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-num">2</div>
+  <div class="step-content">
+    <strong>やりたいことを伝える</strong><br>
+    メッセージ欄に、やりたいことを日本語で入力して送信します。<br>
+    難しい言い方は不要です。<span class="highlight">普段話すように伝えれば大丈夫</span>です。
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-num">3</div>
+  <div class="step-content">
+    <strong>確認する</strong><br>
+    クロードが変更を完了すると、確認用のファイルが表示されます。<br>
+    内容をチェックして、OKなら「<strong>この内容でOKです</strong>」と伝えてください。<br>
+    気に入らなければ「<strong>元に戻して</strong>」と伝えるだけです。
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-num">4</div>
+  <div class="step-content">
+    <strong>公開する</strong><br>
+    Cloudflareにアップロードしてサイトに反映します。<br>
+    「<strong>サイトに反映して</strong>」と伝えるか、デプロイ手順ガイドの通りに手動アップロードします。
+  </div>
+</div>
+
+<h1>よく使うフレーズ集</h1>
+<p>以下のフレーズをそのままコピーして使えます。「〇〇〇」の部分を変えるだけでOKです。</p>
+
+<h2>文章を変更したい時</h2>
+<div class="phrase-box">ファーストビューのキャッチコピーを「〇〇〇」に変えてください</div>
+<div class="phrase-box">お客様の声のセクションに、新しい口コミを追加してください</div>
+<div class="phrase-box">FAQに「〇〇〇」という質問と回答を追加してください</div>
+<div class="phrase-box">対応エリアに「〇〇市」を追加してください</div>
+<div class="phrase-box">代表挨拶の「〇〇〇」の部分を「△△△」に変えてください</div>
+
+<h2>新しいコンテンツを追加したい時</h2>
+<div class="phrase-box">コラム記事を書きたいです。テーマは「〇〇〇」です</div>
+<div class="phrase-box">サービスメニューに「〇〇〇」を追加してください</div>
+<div class="phrase-box">新しいセクションを追加したいです。内容は〇〇〇です</div>
+
+<h2>元に戻したい時</h2>
+<div class="phrase-box">さっきの変更、やっぱり元に戻してください</div>
+<div class="phrase-box">今日の変更を全部取り消して、朝の状態に戻してください</div>
+
+<h2>公開したい時</h2>
+<div class="phrase-box">この内容でOKです。サイトに反映してください</div>
+<div class="phrase-box">Cloudflareにアップロードしてください</div>
+
+<h2>確認したい時</h2>
+<div class="phrase-box">今のサイトの状態を見せてください</div>
+<div class="phrase-box">最後に変更した内容を教えてください</div>
+
+<h1>サイトの構成</h1>
+<p>サイトは上から順に以下のセクションで構成されています。<br>変更を依頼する時に<strong>セクション名を伝えると</strong>、スムーズに作業が進みます。</p>
+
+<table class="section-table">
+<tr><th>#</th><th>セクション名</th><th>内容</th></tr>
+<tr><td>1</td><td><strong>ファーストビュー</strong></td><td>メインのキャッチコピーと写真</td></tr>
+<tr><td>2</td><td><strong>お悩み</strong></td><td>ターゲットの悩みに共感するセクション</td></tr>
+<tr><td>3</td><td><strong>できること</strong></td><td>3つのサービス紹介（荷造り・荷解き・整理整頓）</td></tr>
+<tr><td>4</td><td><strong>安心の理由</strong></td><td>女性専用・保育士資格など4つの安心ポイント</td></tr>
+<tr><td>5</td><td><strong>お客様の声</strong></td><td>利用者の感想・口コミ</td></tr>
+<tr><td>6</td><td><strong>こんな時に</strong></td><td>利用シーンの紹介</td></tr>
+<tr><td>7</td><td><strong>Before & After</strong></td><td>整理前後の比較写真</td></tr>
+<tr><td>8</td><td><strong>代表挨拶</strong></td><td>真理子さんからのメッセージ</td></tr>
+<tr><td>9</td><td><strong>ご利用の流れ</strong></td><td>LINE相談〜作業完了までの4ステップ</td></tr>
+<tr><td>10</td><td><strong>よくある質問</strong></td><td>FAQ（6問）</td></tr>
+<tr><td>11</td><td><strong>最終CTA</strong></td><td>LINE無料相談ボタン</td></tr>
+</table>
+
+<h1>重要な情報まとめ</h1>
+<table class="info-table">
+<tr><td>サイトURL</td><td>https://mamarira-v6-32h.pages.dev/</td></tr>
+<tr><td>Cloudflareアカウント</td><td>Credojpn@gmail.com</td></tr>
+<tr><td>GitHubアカウント</td><td>credojpn-a11y</td></tr>
+<tr><td>GitHubリポジトリ</td><td>https://github.com/credojpn-a11y/mamarira-v6</td></tr>
+</table>
+
+<div class="tip" style="margin-top:32px;font-size:1.05rem">
+困った時は、クロードに「<strong>助けて</strong>」「<strong>分からない</strong>」と伝えれば、丁寧にサポートしてくれます。何回聞いても大丈夫です。
+</div>
+
+</body>
+</html>

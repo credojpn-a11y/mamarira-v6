@@ -1,0 +1,36 @@
+===================================
+依頼内容：Cloudflare PagesとGitHubの連携設定
+===================================
+
+【状況】
+- GitHubリポジトリは作成・ファイルアップロード済み
+- リポジトリURL: https://github.com/credojpn-a11y/mamarira-v6
+- Cloudflareアカウント: Credojpn@gmail.com（ログイン済み）
+
+【やってほしいこと】
+
+Cloudflare PagesでGitHub連携の自動デプロイを設定してください。
+
+手順：
+1. Cloudflareダッシュボード（https://dash.cloudflare.com/）にログイン
+2. 左メニューの「Workers & Pages」（従業員とページ）をクリック
+3. 「Create」（作成）ボタンをクリック
+4. 「Pages」タブを選択
+5. 「Connect to Git」（Gitに接続）を選択
+6. GitHubアカウント（credojpn-a11y）を連携・認証
+7. リポジトリ一覧から「mamarira-v6」を選択
+8. ビルド設定：
+   - プロジェクト名: mamarira-v6
+   - プロダクションブランチ: main
+   - フレームワーク: None
+   - ビルドコマンド: （空欄のまま）
+   - ビルド出力ディレクトリ: /（スラッシュのみ）
+9. 「Save and Deploy」をクリック
+
+【完了後に教えてほしいこと】
+- 新しいCloudflare PagesのURL（○○○.pages.dev の形式）
+- 正常にデプロイされたかどうか
+
+【注意】
+- ファイルの中身は変更しないでください
+- 画像は絶対にいじらないでください
